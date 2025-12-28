@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aiwa Mejia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="body" style="background-color: rgb(17, 17, 17);">
+<header class="header">
+<nav>
+  <div class="dropdown"></div>
+    <div class="navigationbuttons">
+      <button onclick="window.location.href='drawings.html'" class="drawingbutton" style="background-color: transparent; color: aliceblue;">ANALOG DRAWINGS</button>
+      <button onclick="window.location.href='fusion.html'" class="fusionbutton" style="background-color: transparent; color: aliceblue;">FUSION360</button>
+      <button onclick="window.location.href='software.html'" class="softwarebutton" style="background-color: transparent; color: aliceblue;">SOFTWARƐ</button>
+      <button onclick="window.location.href='passionprojects.html'" class="passionprojectbutton" style="background-color: transparent; color: aliceblue;">PASSION PROJƐCTS</button>
+      <button onclick="window.location.href='photography.html'" class="photographybutton" style="background-color: transparent; color: aliceblue;">PHOTOGRAPHY</button>
+      <button onclick="window.location.href='sensu.html'" class="sensubutton" style="background-color: transparent; color: aliceblue;">SƐNSU</button>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="mobilemenu" id="mobilemenu">
+      <button onclick="window.location.href='drawings.html'" class="drawingbuttonmobile" style="background-color: transparent; color: aliceblue;">ANALOG DRAWINGS</button>
+      <button onclick="window.location.href='fusion.html'" class="fusionbuttonmobile" style="background-color: transparent; color: aliceblue;">FUSION360</button>
+      <button onclick="window.location.href='software.html'" class="softwarebuttonmobile" style="background-color: transparent; color: aliceblue;">SOFTWARƐ</button>
+      <button onclick="window.location.href='passionprojects.html'" class="passionprojectbuttonmobile" style="background-color: transparent; color: aliceblue;">PASSION PROJƐCTS</button>
+      <button onclick="window.location.href='photography.html'" class="photographybuttonmobile" style="background-color: transparent; color: aliceblue;">PHOTOGRAPHY</button>
+      <button onclick="window.location.href='sensu.html'" class="sensubuttonmobile" style="background-color: transparent; color: aliceblue;">SƐNSU</button>
+  </div>
+</nav>
+</header>
+<script>
+    function toggleMenu() {const menu = document.getElementById('mobilemenu'); menu.style.display = menu.style.display === "flex" ? "none" : "flex";}
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {const header = document.querySelector(".header"); const btn = document.getElementById("BacktoTop"); let lastScroll = 0;
+    window.addEventListener("scroll", () => {const currentScroll = window.scrollY; if (currentScroll > lastScroll) {header.style.top = "-100px";} else {header.style.top = "0";}
+    lastScroll = currentScroll;}); btn.addEventListener("click", () => {window.scrollTo({ top: 0, behavior: "smooth" });});});
+</script>
+<div class="hero">
+    <div class="coverimage"><img src="Atlantis.png"></div>
+    <div class="maintext">
+    <h1 class="maintitle" style="color: aliceblue;">PORTFOLIO</h1>
+    <p1 class="latinquote" style=" color: aliceblue;">urbem latericium invenit, marmoream reliquit</p1>
+    </div>
+</div>
+<div class="aboutme">
+  <div class="leftcolumn">
+    <p2 class="myname" style="color: aliceblue;">Aiwa Mejia</p2>
+    <p class="paragraph1" style="color: aliceblue;">I am an architecture student at the University at Buffalo. My portfolio highlights both academic projects and independent explorations across a wide range of mediums, including lead, charcoal, and digital modeling software. I aim to challenge the indifference of much contemporary work, which prioritize capital over humanity, creating spaces that are emotionally resonant, thought-provoking, and rooted in human experience.</p>
+  </div>
+    <img class="aboutmeimage"; src="Aboutme.jpg">
+    <p class="paragraph2" style="color: aliceblue;">On the side, I author articles on substack covering architecture, politics, society. I also study classical literature and romance languages such as Spanish and French. I enjoy self-directed learning; most recently teaching myself HTML, CSS, Java.</p>
+</div>
+<div class="box">
+  <p class="recentwork"; style="color: aliceblue;">Recent Work</p>
+  <div class="square">
+    <div class="featuredleftcolumn">
+      <img class="featuredzenith"; src="Featured Zenith.png">
+      <p class="featuredzenithtitle" style="color: aliceblue;">Zenith</p>
+      <p class="featuredzenithcaption" style="color: aliceblue;">In contrast to the elaborate and fantastical space stations often depicted in films, contemporary space stations are grounded in functionality. Drawing inspiration from cinema, I created Zenith. Essentially a skyscraper in orbit, it aims to provide residential living. I took full advantage of Fusion360‘s features to develop the station’s intricate and unique design.</p>
+      <button onclick="window.location.href='fusion.html'" class="morelikethis1">More Like This</button>
+    </div>
+    <div class="featuredcentercolumn">
+      <img class="featurededinburgh"; src="Featured Edinburgh.png">
+      <p class="featurededinburghtitle" style="color: aliceblue;">Edinburgh</p>
+      <p class="featurededinburghcaption" style="color: aliceblue;">Currently in progress, this analog drawing examines how capitalism grips contemporary architecture. Using cut fragments of credit cards integrated into the Gothic window and its supporting columns, the piece contrasts historic craftsmanship with modern financial domination.</span></p>
+      <button onclick="window.location.href='drawings.html'" class="morelikethis2">More Like This</button>
+    </div>
+    <div class="featuredrightcolumn">
+      <img class="featuredsensu"; src="Featured ARC101 Project 3 Final Axon.png">
+      <p class="featuredsensutitle" style="color: aliceblue;">Sensu</p>
+      <p class="featuredsensucaption" style="color: aliceblue;">An axonometric drawing representing the final model for my ARC101 studio project. For this project, I created four rooms, each formed from at least one flat surface and fan. The fifth room, is distinct, formed entirely from fans, with a roof that swoops downward to conceal the space. The circulation encourages a slowed experience: steps add deliberate pacing, while the fans curve to guide movement toward corners, obscure certain views, and invite users to linger and re-engage with the space.</p>
+      <button onclick="window.location.href='sensu.html'" class="morelikethis3">More Like This</button>
+    </div>
+  </div>
+</div>
+<footer class="webfooter">
+  <button class="backtotop" id="BacktoTop">↑ Back to Top</button>
+  <div class="sociallinks">
+    <a href="https://www.linkedin.com/in/aiwa-mejia-912338348/" target="_blank">
+      <div class="linkedin"><img src="Linkedin.png" alt="LinkedIn"></div>
+    </a>
+    <a href="mailto:aiwa.mejia@gmail.com">
+      <div class="email"><img src="Mail.png" alt="Email"></div>
+    </a>
+  </div>
+</footer>
+</body>
+</html>

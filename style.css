@@ -1,0 +1,333 @@
+html {overflow-x: hidden;
+        padding: 0;
+        margin: 0;}
+body {margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;}
+.header {position: fixed;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(17, 17, 17);
+        transition: top 0.2s ease;
+        margin:0;
+        z-index: 1000;}
+.hero {position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+.coverimage {position: absolute;
+        inset: 0;
+        z-index: -1;}
+.coverimage img {width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        display: block;}
+@font-face {font-family: "Cinzel";
+        src: url(Cinzel/Cinzel-VariableFont_wght.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;}
+@font-face {font-family: "Playfair";
+        src: url(Playfair/Playfair-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;}
+@font-face {
+        font-family: "Abrilfatface";
+        src: url(Abrilfatface/Abrilfatface-Regular.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;}
+.navigationbuttons {display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-left: 7vw;}
+.drawingbutton, .fusionbutton, .softwarebutton, .passionprojectbutton, .photographybutton, .sensubutton {
+        padding-right: 7vw;
+        font-family: "Playfair";
+        font-size: 1.3vw;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;}
+.maintext {position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding-top: 0;
+        z-index: 1;}
+.maintitle {text-align: center;
+        margin: 0;
+        font-family: "Cinzel";
+        font-size: 2vw;
+        margin-bottom: 15px;}
+.latinquote {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: "Cinzel";
+        font-size: 1vw;}
+.myname {font-family: "Cinzel";
+        font-size: 1.6vw;}
+.aboutme {display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: auto;
+        position: relative;
+        height: auto;
+        max-height: 800px;
+        justify-items: center;
+        box-sizing: border-box;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        gap: 35px;}
+.leftcolumn {display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;}
+.paragraph1 {font-family: "Playfair";
+        text-align: left;
+        font-size: 1.03vw}
+.paragraph2 {font-family: "Playfair";
+        text-align: left;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.03vw}
+.aboutmeimage {width: 100%;
+        max-width: 350px;
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);}
+.square {position: relative; display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;}
+.box {padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 40px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        align-items: start;
+        justify-items: center;
+        box-sizing: border-box;
+        background-color: rgb(64, 95, 100);}
+.recentwork {text-align: center;
+        font-family: "Cinzel";
+        font-size: 2vw;}
+.box .featuredzenith, .featurededinburgh, .featuredsensu {width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;}
+.box .featuredzenithtitle, .featurededinburghtitle, .featuredsensutitle {font-family: "Cinzel";
+        font-size: 1.6vw;
+        margin-bottom: 0px;
+        text-align: center;}
+.box .featuredzenithcaption, .featurededinburghcaption, .featuredsensucaption {display: block;
+        font-family: "Playfair";
+        text-align: center;
+        font-size: 1.03vw}
+.featuredleftcolumn, .featuredcentercolumn, .featuredrightcolumn {display: flex;
+        flex-direction: column;}
+.box .morelikethis1, .morelikethis2, .morelikethis3 {
+        font-family: "Cinzel";
+        background-color: transparent;
+        color: aliceblue;
+        border: 2px solid white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.03vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        text-align: center;}
+#BacktoTop {font-size: 1.2vw;
+        font-family: "playfair";        
+        background: transparent;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;}
+.linkedin img {width: 33px;}
+.email img {width: 32px;}
+.sociallinks {display: flex;
+        gap: 10px;}
+.webfooter {margin-top: 3%;
+        margin-bottom: 35px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;}
+.backbutton {margin-left: 15px;
+        margin-bottom: 6px;
+        font-size: 1.2vw;
+        font-family: "playfair";
+        background-color: transparent;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;}
+.analogdrawingsweb, .fusion360web, .softwareweb, .passionprojectsweb, .photographyweb, .sensuweb {margin-top: 7px;
+        margin-left: 15px;
+        margin-bottom: 0px;
+        font-size: 1.6vw;
+        font-family: "Playfair";}
+.gallery {margin-top: 10px;
+        margin-bottom: 120px;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: left;}
+.gallery-item {
+        width: 270px;
+        height: 380px;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: center;
+        transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+        opacity: 0;
+        border-radius: 8px;}
+.gallery-item.loaded {
+        opacity: 1;}
+.gallery-item:hover {transform: scale(1.03);
+        filter: opacity(60%);
+        transition: filter 0.3s ease;}
+.lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;}
+.lightbox-img {
+        max-width: 100%;
+        max-height: 100%;}
+#prev, #next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 35px;
+        font-family: "Cinzel";
+        color: aliceblue;
+        background-color: rgba(0,0,0,0); 
+        padding: 0px 26px;
+        cursor: pointer;
+        user-select: none;
+        transition: background 0.2s, color 0.2s;
+        z-index: 2001;}
+#prev { left: 20px; }
+#next { right: 20px; }
+#close {position: absolute;
+        top: 10px;
+        right: 40px;
+        font-size: 60px;
+        font-family: "Cinzel";
+        color: aliceblue;
+        cursor: pointer;}
+.mobilemenu {display: none;}
+@media (max-width: 770px) {.navigationbuttons {display: none;}
+.hamburger {display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: aliceblue;
+        margin-left: auto;
+        margin-bottom: 5px;
+        z-index: 9999;
+        position: relative;}
+.mobilemenu {display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,0.9);
+        padding: 15px;
+        flex-direction: column;
+        z-index: 9998;}
+.mobilemenu button {
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: left;
+        padding: 10px 0;
+        color: aliceblue;
+        font-family: "playfair";
+        font-size: 15px;}
+.maintitle {display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        margin-bottom: 0px;}
+.latinquote {font-size: 13px;}
+.aboutme, .box .square {grid-template-columns: 1fr;
+        height: auto;
+        gap: 30px;}
+.aboutme {max-height: 3000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 40px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        top: 0;
+        box-sizing: border-box;}
+.leftcolumn {padding-left: 0;
+        margin-left: 0;}
+.myname {font-size: 25px}
+.paragraph1 {margin-bottom: 0;
+        font-size: 16px;}
+.paragraph2 {margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        bottom: 0;
+        font-size: 16px;}
+.aboutmeimage {transform: none;}
+.box {top:0;
+        height: auto;
+        margin-top: 0;
+        max-height: 4000px;
+        padding-bottom: 50px;}
+.square {margin-top: 0;
+        top: 0;
+        margin-bottom: 0;
+        top: 0;
+        bottom: 0}
+.recentwork {font-size: 30px;}
+.box .featuredzenithtitle, .box .featurededinburghtitle, .box .featuredsensutitle {margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 25px;}
+.box .featuredzenithcaption, .box .featurededinburghcaption, .box .featuredsensucaption {margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 16px;}
+.box .morelikethis1, .box .morelikethis2, .box .morelikethis3 {margin-top: 20px;
+        font-size: 16px}
+.webfooter {padding-top: 30px;}
+#BacktoTop {font-size: 18px;}
+.backbutton {font-size: 18px;}
+.analogdrawingsweb, .fusion360web, .softwareweb, .passionprojectsweb, .photographyweb, .sensuweb {font-size: 30px;}
+.gallery {display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;}
+.gallery img {max-width: 100%;
+        height: auto;}}
