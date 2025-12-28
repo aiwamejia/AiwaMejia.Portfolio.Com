@@ -44,9 +44,10 @@ body {margin: 0;
 .navigationbuttons {display: flex;
         justify-content: center;
         padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 7vw;}
 .drawingbutton, .fusionbutton, .softwarebutton, .passionprojectbutton, .photographybutton, .sensubutton {
-        padding-right: 7vw;
+        margin-right: 7vw;
         font-family: "Playfair";
         font-size: 1.3vw;
         outline: none;
@@ -245,6 +246,7 @@ body {margin: 0;
         color: aliceblue;
         cursor: pointer;}
 .mobilemenu {display: none;}
+@media screen and (min-width: 769px) {.mobilemenu { display: none !important; } .hamburger { display: none; }}
 @media (max-width: 770px) {.navigationbuttons {display: none;}
 .hamburger {display: block;
         font-size: 30px;

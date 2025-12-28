@@ -29,10 +29,10 @@
       <button onclick="window.location.href='sensu.html'" class="sensubuttonmobile" style="background-color: transparent; color: aliceblue;">SƐNSU</button>
   </div>
 </nav>
-</header>
 <script>
-    function toggleMenu() {const menu = document.getElementById('mobilemenu'); menu.style.display = menu.style.display === "flex" ? "none" : "flex";}
+  function toggleMenu() {const menu = document.getElementById('mobilemenu'); if (!menu) return; menu.style.display = (menu.style.display === "flex") ? "none" : "flex";}
 </script>
+</header>
 <script>
     document.addEventListener("DOMContentLoaded", () => {const header = document.querySelector(".header"); const btn = document.getElementById("BacktoTop"); let lastScroll = 0;
     window.addEventListener("scroll", () => {const currentScroll = window.scrollY; if (currentScroll > lastScroll) {header.style.top = "-100px";} else {header.style.top = "0";}
