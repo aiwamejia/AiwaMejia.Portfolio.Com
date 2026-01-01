@@ -296,12 +296,15 @@ body {margin: 0;
         margin-left: 0;}
 .myname {font-size: 25px}
 .paragraph1 {margin-bottom: 0;
-        font-size: 16px;}
+        font-size: 16px;
+        text-align: center;}
 .paragraph2 {margin-top: 0;
         margin-bottom: 0;
         padding-bottom: 0;
         bottom: 0;
-        font-size: 16px;}
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0;}
 .aboutmeimage {transform: none;}
 .box {top:0;
         height: auto;
